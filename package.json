@@ -1,7 +1,10 @@
 {
   "name": "tauri-plugin-speech-recog-api",
   "version": "0.1.0",
-  "author": "You",
+  "author": {
+    "name": "lumiknit",
+    "email": "aasr4r4@gmail.com"
+  },
   "description": "",
   "type": "module",
   "types": "./dist-js/index.d.ts",
