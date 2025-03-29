@@ -308,6 +308,16 @@
           "description": "Default permissions for the plugin",
           "type": "string",
           "const": "default"
+        },
+        {
+          "description": "Enables the is_supported command.",
+          "type": "string",
+          "const": "allow-all-commands"
+        },
+        {
+          "description": "Denies the is_supported command.",
+          "type": "string",
+          "const": "deny-all-commands"
         }
       ]
     }
