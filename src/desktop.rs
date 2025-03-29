@@ -19,4 +19,10 @@ impl<R: Runtime> SpeechRecog<R> {
       value: payload.value,
     })
   }
+
+  pub fn is_supported(&self, _payload: IsSupportedRequest) -> crate::Result<IsSupportedResponse> {
+    Ok(IsSupportedResponse {
+      value: false,
+    })
+  }
 }
