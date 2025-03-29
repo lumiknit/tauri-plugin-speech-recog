@@ -25,4 +25,11 @@ class ExamplePlugin(private val activity: Activity): Plugin(activity) {
         ret.put("value", implementation.pong(args.value ?: "default value :("))
         invoke.resolve(ret)
     }
+
+    @Command
+    fun isSupported(invoke: Invoke) {
+        val ret = JSObject()
+        ret.put("value", true)
+        invoke.resolve(ret)
+    }
 }

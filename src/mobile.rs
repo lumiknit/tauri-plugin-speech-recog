@@ -35,7 +35,7 @@ impl<R: Runtime> SpeechRecog<R> {
   pub fn is_supported(&self, payload: IsSupportedRequest) -> crate::Result<IsSupportedResponse> {
     self
       .0
-      .run_mobile_plugin("is_supported", payload)
+      .run_mobile_plugin("isSupported", payload)
       .map_err(Into::into)
   }
 }
